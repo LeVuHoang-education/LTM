@@ -70,6 +70,9 @@ body{
   border: 2px double #4CAF50;
   padding: 10px;
 }
+.ChucNang {
+  margin-left: 80px;
+}
 .ChucNang button {
   color: white;
   border: none;
