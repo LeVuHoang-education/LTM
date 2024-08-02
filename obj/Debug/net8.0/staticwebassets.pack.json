@@ -13,12 +13,12 @@
       "PackagePath": "staticwebassets\\image\\Call-icon.png"
     },
     {
-      "Id": "D:\\C#\\Lap_trinh_mang\\WebRTC\\VideoCallApp\\wwwroot\\image\\camera.png",
-      "PackagePath": "staticwebassets\\image\\camera.png"
-    },
-    {
       "Id": "D:\\C#\\Lap_trinh_mang\\WebRTC\\VideoCallApp\\wwwroot\\image\\cameraO.png",
       "PackagePath": "staticwebassets\\image\\cameraO.png"
+    },
+    {
+      "Id": "D:\\C#\\Lap_trinh_mang\\WebRTC\\VideoCallApp\\wwwroot\\image\\cameraOff.png",
+      "PackagePath": "staticwebassets\\image\\cameraOff.png"
     },
     {
       "Id": "D:\\C#\\Lap_trinh_mang\\WebRTC\\VideoCallApp\\wwwroot\\image\\endcall.png",

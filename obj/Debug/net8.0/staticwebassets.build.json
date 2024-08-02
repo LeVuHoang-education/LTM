@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9U5wCtgQW/mnz4IUQnGeaivyHLGQgAM8+UmGF8Hx06o=",
+  "Hash": "ZbNp+rJ0rERNY/UMitnrk3I2ThSAKZberiIX+/ki/hg=",
   "Source": "VideoCallApp",
   "BasePath": "_content/VideoCallApp",
   "Mode": "Default",
@@ -74,25 +74,6 @@
       "OriginalItemSpec": "wwwroot\\image\\Call-icon.png"
     },
     {
-      "Identity": "D:\\C#\\Lap_trinh_mang\\WebRTC\\VideoCallApp\\wwwroot\\image\\camera.png",
-      "SourceId": "VideoCallApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\C#\\Lap_trinh_mang\\WebRTC\\VideoCallApp\\wwwroot\\",
-      "BasePath": "_content/VideoCallApp",
-      "RelativePath": "image/camera.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\camera.png"
-    },
-    {
       "Identity": "D:\\C#\\Lap_trinh_mang\\WebRTC\\VideoCallApp\\wwwroot\\image\\cameraO.png",
       "SourceId": "VideoCallApp",
       "SourceType": "Discovered",
@@ -110,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\cameraO.png"
+    },
+    {
+      "Identity": "D:\\C#\\Lap_trinh_mang\\WebRTC\\VideoCallApp\\wwwroot\\image\\cameraOff.png",
+      "SourceId": "VideoCallApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\Lap_trinh_mang\\WebRTC\\VideoCallApp\\wwwroot\\",
+      "BasePath": "_content/VideoCallApp",
+      "RelativePath": "image/cameraOff.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\cameraOff.png"
     },
     {
       "Identity": "D:\\C#\\Lap_trinh_mang\\WebRTC\\VideoCallApp\\wwwroot\\image\\endcall.png",
