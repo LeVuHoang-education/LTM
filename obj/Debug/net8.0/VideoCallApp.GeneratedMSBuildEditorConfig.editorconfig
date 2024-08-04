@@ -9,39 +9,39 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VideoCallApp
 build_property.RootNamespace = VideoCallApp
-build_property.ProjectDir = D:\C#\Lap_trinh_mang\WebRTC\VideoCallApp\
+build_property.ProjectDir = C:\Users\Admin\Desktop\nam 2\Net dev\code\btl\LTM\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\C#\Lap_trinh_mang\WebRTC\VideoCallApp
+build_property.MSBuildProjectDirectory = C:\Users\Admin\Desktop\nam 2\Net dev\code\btl\LTM
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/C\#/Lap_trinh_mang/WebRTC/VideoCallApp/Pages/Error.cshtml]
+[C:/Users/Admin/Desktop/nam 2/Net dev/code/btl/LTM/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/Lap_trinh_mang/WebRTC/VideoCallApp/Pages/Index.cshtml]
+[C:/Users/Admin/Desktop/nam 2/Net dev/code/btl/LTM/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/Lap_trinh_mang/WebRTC/VideoCallApp/Pages/Room.cshtml]
+[C:/Users/Admin/Desktop/nam 2/Net dev/code/btl/LTM/Pages/Room.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9vbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/Lap_trinh_mang/WebRTC/VideoCallApp/Pages/Shared/_Layout.cshtml]
+[C:/Users/Admin/Desktop/nam 2/Net dev/code/btl/LTM/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/Lap_trinh_mang/WebRTC/VideoCallApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Admin/Desktop/nam 2/Net dev/code/btl/LTM/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/Lap_trinh_mang/WebRTC/VideoCallApp/Pages/_ViewImports.cshtml]
+[C:/Users/Admin/Desktop/nam 2/Net dev/code/btl/LTM/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/Lap_trinh_mang/WebRTC/VideoCallApp/Pages/_ViewStart.cshtml]
+[C:/Users/Admin/Desktop/nam 2/Net dev/code/btl/LTM/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
