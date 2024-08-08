@@ -4,100 +4,40 @@
 @{
     ViewData["Title"] = "Room " + Model.RoomId;
 }
-<div class="displayU">
-    <video id="localVideo" autoplay muted width="850px" height="500px"></video>
 
-    <div class="ChucNang">
-        <button id="startCallBtn"><img src="~/image/telephone.png" width="30px" height="30px" alt=""></button>
-        <button id="toggleCameraBtn" ><img id="iconCamera" src="~/image/cameraO.png" width="30px" height="30px " alt=""></button>
-        <button id="toggleMicBtn"><img id="iconMic" src="~/image/microphone-black-shape.png" width="30px" height="30px"
-                alt=""></button>
-        <button id="endCallBtn"><img src="~/image/phone.png" width="30px" height="30px" alt=""></button>
+<style>
+    video {
+        width: 40vw;
+        height: 30vw;
+        margin: 2rem;
+        background: #2c3e50;
+    }
+
+    .videos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<script type="module" src="~/js/firebaseConfig.js"></script>
+<script type="module" src="~/js/room.js"></script>
+
+<div class="displayU">
+    <div class="videos">
+        <video id="localVideo" autoplay playsinline></video>
+        <video id="remoteVideo" autoplay playsinline></video>
+    </div>
+
+    <div class="controlBtn">
+        <button id="cameraBtn">
+            <img id="iconCamera" src="~/image/cameraO.png" width="30px" height="30px ">
+        </button>
+        <button id="microBtn">
+            <img id="iconMic" src="~/image/microphone-black-shape.png" width="30px" height="30px">
+        </button>
+        <button id="hangupBtn">
+            <img src="~/image/phone.png" width="30px" height="30px">
+        </button>
     </div>
 </div>
-<video id="remoteVideo" autoplay></video>
-<div id="remoteVideosContainer">
-
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.9/signalr.min.js"></script>
-<script>
-    const connection = new signalR.HubConnectionBuilder()
-        .withUrl("/videoHub")
-        .build();
-
-    const roomId = '@Model.RoomId';
-    const localVideo = document.getElementById("localVideo");
-    const remoteVideosContainer = document.getElementById("remoteVideosContainer");
-
-    const configuration = {
-        iceServers: [{ urls: 'stun:stun.l.google.com:19302' }]
-    };
-    let localStream = null;     
-    let remoteStream = null;
-    let peerConnection = null;
-    //bật tắt camera
-    let peerConnections = {};
-    let remoteStreams = [];
-
-    let cameraEnabled = true;
-    document.getElementById('toggleCameraBtn').addEventListener('click', async function ()
-    {
-        if (localStream)
-        {
-            if (cameraEnabled)
-            {
-                localStream.getVideoTracks().forEach(track => track.enabled = false);
-
-                document.getElementById('iconCamera').src = '/image/cameraOff.png';
-                document.getElementById('toggleCameraBtn').classList.add('red-background');
-            }
-            else
-            {
-                localStream.getVideoTracks().forEach(track => track.enabled = true);
-                document.getElementById('iconCamera').src = '/image/cameraO.png';
-                document.getElementById('toggleCameraBtn').classList.remove('red-background');
-            }
-            cameraEnabled = !cameraEnabled;
-        } else
-        {
-            try
-            {
-                localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
-                document.getElementById('localVideo').srcObject = localStream;
-                document.getElementById('iconCamera').src = '/image/cameraO.png';
-                document.getElementById('toggleCameraBtn').classList.remove('red-background');
-                cameraEnabled = true;
-            } catch (error)
-            {
-                console.error('Error accessing camera:', error);
-            }
-        }
-    });
-    document.getElementById('toggleCameraBtn')
-    //bật tắt mic
-    let microphoneEnabled = true;
-    document.getElementById('toggleMicBtn').addEventListener('click', async function ()
-    {
-        if (localStream)
-        {
-            if (microphoneEnabled)
-            {
-                localStream.getAudioTracks().forEach(track => track.enabled = false);
-                document.getElementById('iconMic').src = '/image/mute-microphone.png';
-                document.getElementById('toggleMicBtn').classList.add('red-background');
-            }
-            else
-            {
-                localStream.getAudioTracks().forEach(track => track.enabled = true);
-                document.getElementById('iconMic').src = '/image/microphone-black-shape.png';
-                document.getElementById('toggleMicBtn').classList.remove('red-background');
-            }
-            microphoneEnabled = !microphoneEnabled;
-        }
-        else
-        {
-            console.error('Local stream not available.');
-        }
-    });
-</script>

@@ -5,27 +5,13 @@
     ViewData["Title"] = "Video Call";
 }
 
-<script>
-    function createRoom() {
-        const roomId = generateRoomId();
-        const roomIdInput = document.getElementById('roomId');
-        roomIdInput.value = roomId;
-        alert('Room created. Share this room ID with your friend: ' + roomId);
-         window.location.href = '/Room/' + roomId;
-    }
-
-    function generateRoomId() {
-        return 'room-' + Math.random().toString(36).substr(2, 9);
-    }
-</script>
+<script type="module" src="~/js/firebaseConfig.js"></script>
+<script type="module" src="~/js/index.js"></script>
 
 <div class="main-con">
-    <button id="createRoomBtn" onclick="createRoom();">Create Room</button>
+    <button id="createRoomBtn">Create Room</button>
     <div class="Box-join">
-        <input type="text" id="roomId" placeholder="Enter Room ID" />
+        <input type="text" id="roomIdInput" placeholder="Enter Room ID" />
         <button id="joinRoomBtn">Join Room</button>
     </div>
 </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.9/signalr.min.js"></script>
-<script src="/js/Home.js"></script>
