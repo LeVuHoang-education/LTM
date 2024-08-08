@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VideoCallApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+906e2a3b67f3a6356910ee1e51b42f661e239e71")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61d46b63f6dabca46ed83a3b10bcd4b67ba96bb3")]
 [assembly: System.Reflection.AssemblyProductAttribute("VideoCallApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VideoCallApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
